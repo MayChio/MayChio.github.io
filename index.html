@@ -1,17 +1,78 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+        }
+        section {
+            padding: 2rem;
+        }
+        /* Contenedor para la foto y el texto */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        /* Estilo para la imagen */
+        .foto {
+            flex: 0 0 30%;
+            max-width: 200px;
+            margin-right: 2rem;
+        }
+        .foto img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        /* Estilo para la descripción */
+        .descripcion {
+            flex: 1;
+        }
+        /* Estilo para los proyectos */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Bienvenidos a mi Portafolio</h1>
     </header>
+    
     <section>
         <h2>Sobre mí</h2>
-        <p>Mi nombre es Mayra Rocio Valencia Brito, soy Data Scientist y tengo una formación en Ingeniería Industrial. Además, cuento con una Maestría en Electrónica de Potencia, un Diplomado en Administración de Proyectos y una preparación para la certificación del PMI.</p>
+        <div class="content">
+            <div class="foto">
+                <!-- Asegúrate de reemplazar 'tu-foto.jpg' por la ubicación de tu imagen -->
+                <img src="tu-foto.jpg" alt="Mi Foto">
+            </div>
+            <div class="descripcion">
+                <p>Mi nombre es Mayra Rocio Valencia Brito, soy Data Scientist y tengo una formación en Ingeniería Industrial. Además, cuento con una Maestría en Electrónica de Potencia, un Diplomado en Administración de Proyectos y una preparación para la certificación del PMI.</p>
+            </div>
+        </div>
     </section>
+
     <section>
         <h2>Mis Proyectos</h2>
         <ul>
@@ -20,17 +81,9 @@
             <li><strong>Tendencias Salariales Globales:</strong> Estudio de factores económicos y sociales que afectan los salarios a nivel global, con el fin de proponer políticas salariales equitativas.</li>
         </ul>
     </section>
+
     <section>
         <h2>Contacto</h2>
         <p>Puedes contactarme a través de:</p>
-        <ul>
-            <li>Email: <a href="mailto:ingenierovalenciabrito@gmail.com">ingenierovalenciabrito@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/mayra-rocio-valencia-brito-86746b1ba/">https://www.linkedin.com/in/mayra-rocio-valencia-brito-86746b1ba/</a></li>
-            <li>Facebook: <a href="https://www.facebook.com/MAYRAROCIOVABRI">https://www.facebook.com/MAYRAROCIOVABRI</a></li>
-        </ul>
-    </section>
-</body>
-</html>
+        <ul
 
-      
-   
