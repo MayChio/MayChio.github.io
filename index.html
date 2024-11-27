@@ -1,61 +1,56 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+<section>
+    <h2>Acerca de mí</h2>
+    <div class="acerca-de-mi">
+        <p><strong>¡Hola! Soy Mayra Rocio Valencia Brito</strong></p>
+        <p>Soy Data Scientist con una sólida formación en Ingeniería Industrial, una Maestría en Ciencias de la Ingeniería con especialización en Electrónica de Potencia y un diplomado en Administración de Proyectos con preparación para la certificación del PMI.</p>
+        <p>Durante mi carrera, me he enfocado en la intersección de la tecnología y la analítica de datos, con el objetivo de generar insights que impulsen la toma de decisiones empresariales basadas en datos.</p>
+        <p><strong>Mi enfoque profesional se centra en:</strong></p>
+        <ul>
+            <li>Análisis de grandes volúmenes de datos para mejorar procesos empresariales.</li>
+            <li>Desarrollo de soluciones basadas en datos utilizando herramientas como Python, SQL, y Tableau.</li>
+            <li>Gestión de proyectos complejos, alineando la estrategia de datos con los objetivos de negocio.</li>
+        </ul>
+    </div>
+</section>
 
-        /* Centrar el título */
-        header {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-        }
+<section>
+    <h2>Mis Objetivos</h2>
+    <div class="mis-objetivos">
+        <p>Mi objetivo principal es seguir expandiendo mis habilidades como Data Scientist y contribuir a la optimización de procesos a través del análisis de datos. Busco desarrollar soluciones innovadoras que ayuden a las empresas a tomar decisiones estratégicas basadas en datos. Entre mis metas a corto y largo plazo se incluyen:</p>
+        <ul>
+            <li>Dominar herramientas avanzadas de análisis y visualización de datos.</li>
+            <li>Desarrollar proyectos de inteligencia artificial para resolver problemas complejos en la industria.</li>
+            <li>Asegurar la correcta implementación de proyectos de datos en alineación con los objetivos empresariales, contribuyendo a mejorar la eficiencia operativa y la rentabilidad.</li>
+        </ul>
+    </div>
+</section>
 
-        /* Sección de sobre mí y proyectos */
-        section {
-            padding: 2rem;
-        }
+<section>
+    <h2>Mis Proyectos</h2>
+    <!-- Aquí empiezan tus proyectos -->
+    <h3>Tendencias Salariales Globales</h3>
+    <p><strong>Descripción del Proyecto:</strong></p>
+    <p>Este proyecto se centra en analizar las tendencias salariales globales en diferentes industrias y regiones. El objetivo fue identificar patrones en la distribución de salarios y explorar el impacto de la educación y la experiencia en los ingresos, buscando también analizar las brechas salariales entre géneros.</p>
+    <p><strong>Objetivos:</strong></p>
+    <ul>
+        <li>Analizar las diferencias salariales por industria, región y género.</li>
+        <li>Evaluar el impacto de la educación y la experiencia laboral en los ingresos.</li>
+        <li>Explorar la relación entre los salarios y las habilidades específicas en diferentes sectores.</li>
+    </ul>
+    <p><strong>Metodología:</strong></p>
+    <p>Utilicé Python y SQL para el procesamiento de los datos, generando visualizaciones en Tableau para representar las principales tendencias. Este análisis permitió identificar correlaciones y diferencias significativas entre las diversas variables, ayudando a comprender mejor los factores que influyen en los salarios a nivel global.</p>
+    <p><strong>Lenguajes y herramientas principales:</strong></p>
+    <ul>
+        <li>Python (pandas, matplotlib, seaborn)</li>
+        <li>Tableau</li>
+        <li>SQL</li>
+    </ul>
+    <p><strong>Visualizaciones:</strong></p>
+    <ul>
+        <li>Distribución de salarios por industria</li>
+        <li>Brechas salariales por género</li>
+        <li>Impacto de la experiencia en los salarios</li>
+    </ul>
+    <p><strong>Explora más detalles del proyecto en el repositorio completo:</strong> <a href="enlace-a-tu-repositorio" target="_blank">Repositorio de Tendencias Salariales Globales</a></p>
+</section>
 
-        /* Estilo para el contenedor de la información */
-        .content {
-            display: flex;
-            justify-content: flex-start; /* Alinea el contenido a la izquierda */
-            align-items: flex-start;
-        }
-
-        /* Estilo para la imagen */
-        .foto {
-            flex: 0 0 30%;
-            max-width: 200px;
-            margin-right: 2rem;
-        }
-
-        .foto img {
-            width: 100%;
-            border-radius: 50%;
-        }
-
-        /* Estilo para la descripción */
-        .descripcion {
-            flex: 1;
-            text-align: left; /* Asegura que el texto quede alineado a la izquierda */
-        }
-
-        /* Estilo para los proyectos */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-          
