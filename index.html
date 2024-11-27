@@ -5,103 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+        /* Estilos para centrar el título */
+        h1 {
             text-align: center;
         }
-        .container {
+        
+        /* Estilo para el contenedor de la foto y la información */
+        .about-container {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            padding: 20px;
         }
-        .about {
-            width: 60%;
-            padding: 20px;
-        }
-        .about img {
+
+        /* Estilo para la foto */
+        .profile-photo {
             width: 200px;
+            height: 200px;
             border-radius: 50%;
-            margin-right: 20px;
         }
-        .contact-info {
-            width: 35%;
-            padding: 20px;
+
+        /* Estilo para la información a la derecha */
+        .info {
+            max-width: 60%;
         }
-        h2 {
-            color: #333;
-        }
-        .projects {
-            margin-top: 40px;
-            padding: 20px;
-        }
-        .projects h3 {
-            color: #333;
-        }
-        .projects ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .projects ul li {
-            margin-bottom: 10px;
-        }
+
+        /* Para los enlaces de contacto */
         .contact-info a {
+            display: block;
+            margin-top: 10px;
+            color: #1a73e8;
             text-decoration: none;
-            color: #333;
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Bienvenidos a mi Portafolio</h1>
     </header>
+    <section>
+        <div class="about-container">
+            <!-- Foto de perfil -->
+            <img src="https://github.com/MayChio/MayChio.github.io/blob/main/Mayiiyuuu.jpg?raw=true" alt="Foto de Mayra Rocio Valencia Brito" class="profile-photo">
 
-    <div class="container">
-        <!-- Acerca de mí -->
-        <div class="about">
-            <img src="https://www.example.com/mi-foto.jpg" alt="Mi Foto">
-            <div>
-                <h2>Acerca de mí</h2>
-                <p>Soy Mayra Rocio Valencia Brito, Profesional con MBA, certificación en Análisis de Datos, y una Maestría en Ciencias de la Ingeniería en Electrónica de Potencia. Me apasiona transformar datos en información procesable para tomar decisiones efectivas. Especializada en análisis de datos, creación de dashboards, y gestión de bases de datos utilizando herramientas como Python, SQL y Tableau. A lo largo de mi carrera, he trabajado en proyectos que mejoran la eficiencia operativa y contribuyen al crecimiento empresarial.</p>
-                <p><strong>Objetivos:</strong></p>
-                <ul>
-                    <li>Convertirme en una líder en el análisis de datos y la inteligencia empresarial.</li>
-                    <li>Mejorar las estrategias de negocio a través del análisis predictivo.</li>
-                    <li>Desarrollar proyectos innovadores utilizando datos para impulsar la toma de decisiones en tiempo real.</li>
-                </ul>
+            <!-- Información sobre ti -->
+            <div class="info">
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy Mayra Rocio Valencia Brito, Científica de Datos, Ingeniera Industrial, con Maestría en Electrónica de Potencia y un Diplomado en Administración de Proyectos. Me apasiona transformar datos en información valiosa y tomar decisiones basadas en datos. Especializada en Python, SQL, Tableau y la gestión de proyectos.
+                </p>
             </div>
         </div>
-
-        <!-- Contacto -->
-        <div class="contact-info">
-            <h2>Contacto</h2>
-            <p><strong>Email:</strong> <a href="mailto:ingenierovalenciabrito@gmail.com">ingenierovalenciabrito@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mayra-rocio-valencia-brito-86746b1ba/" target="_blank">Visita mi perfil</a></p>
-            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/MAYRAROCIOVABRI" target="_blank">Sígueme en Facebook</a></p>
-        </div>
-    </div>
-
-    <div class="projects">
+    </section>
+    <section>
         <h2>Mis Proyectos</h2>
-        <div class="projects-list">
-            <h3>1. Telecomunicaciones</h3>
-            <p>Descripción y resultados del proyecto de telecomunicaciones...</p>
+        <p>En este espacio puedes listar algunos proyectos en los que has trabajado.</p>
+        <!-- Aquí puedes agregar más detalles de los proyectos que quieras mostrar -->
+    </section>
 
-            <h3>2. Vehículos Usados</h3>
-            <p>Un análisis de mercado de vehículos usados con visualizaciones interactivas utilizando Streamlit y otras herramientas...</p>
-
-            <h3>3. Tendencias Salariales Globales</h3>
-            <p>Estudio sobre los factores económicos y sociales que afectan los salarios globales...</p>
-        </div>
-    </div>
-
+    <section class="contact-info">
+        <h2>Contacto</h2>
+        <p>Para contactarme, puedes enviarme un correo a: <a href="mailto:ingenierovalenciabrito@gmail.com">ingenierovalenciabrito@gmail.com</a></p>
+        <p>También me puedes encontrar en las siguientes redes sociales:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/mayra-rocio-valencia-brito-86746b1ba/">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/MAYRAROCIOVABRI">Facebook</a></li>
+        </ul>
+    </section>
 </body>
 </html>
