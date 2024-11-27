@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <style>
-        /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,136 +12,124 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #1a73e8;
-            color: white;
-            padding: 20px;
             text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
         }
-
-        /* Estilos para el contenedor de la foto y la información */
-        .about-container {
+        section {
+            margin: 20px;
+        }
+        .content {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .left {
+            flex: 1;
             padding: 20px;
         }
-
-        /* Estilo para la foto */
-        .profile-photo {
-            width: 200px;
-            height: 200px;
+        .right {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+        }
+        .photo {
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
-            object-fit: cover;
+            margin-bottom: 20px;
         }
-
-        /* Estilo para la información */
-        .info {
-            max-width: 60%;
+        h1, h2 {
+            color: #007bff;
         }
-
-        /* Sección de contacto */
-        .contact-info a {
-            display: block;
-            margin-top: 10px;
-            color: #1a73e8;
-            text-decoration: none;
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-
-        /* Estilo para los proyectos */
         .projects {
-            padding: 20px;
-            background-color: white;
-            margin: 20px 0;
-            border-radius: 8px;
+            margin-top: 20px;
         }
-
-        .projects h3 {
-            color: #1a73e8;
+        .project {
+            margin-bottom: 20px;
         }
-
-        /* Enlaces de contacto */
-        .contact-info ul {
+        .links {
             list-style-type: none;
-            padding-left: 0;
+            padding: 0;
         }
-
-        .contact-info ul li {
-            margin-top: 5px;
+        .links li {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Bienvenidos a mi Portafolio</h1>
     </header>
 
-    <section>
-        <div class="about-container">
-            <!-- Foto de perfil -->
-            <img src="https://raw.githubusercontent.com/MayChio/MayChio.github.io/main/Mayiiyuuu.jpg" alt="Foto de Mayra Rocio Valencia Brito" class="profile-photo">
+    <div class="content">
+        <div class="left">
+            <img src="https://github.com/MayChio/MayChio.github.io/blob/main/Mayiiyuuu.jpg?raw=true" alt="Foto de Mayra Rocio" class="photo">
+        </div>
 
-            <!-- Información sobre ti -->
-            <div class="info">
+        <div class="right">
+            <section>
                 <h2>Acerca de mí</h2>
-                <p>
-                    Soy Mayra Rocio Valencia Brito, Científica de Datos, Ingeniera Industrial, con Maestría en Electrónica de Potencia y un Diplomado en Administración de Proyectos. Me apasiona transformar datos en información valiosa y tomar decisiones basadas en datos. Especializada en Python, SQL, Tableau y la gestión de proyectos, busco constantemente mejorar la eficiencia operativa y los resultados empresariales a través del análisis de datos.
-                </p>
+                <p>Soy <strong>Mayra Rocío Valencia Brito</strong>, una profesional con una sólida formación académica que abarca varias disciplinas. Cuento con una <strong>Licenciatura en Ingeniería Industrial</strong>, <strong>una Maestría en Ciencias de la Ingeniería en Electrónica de Potencia</strong>, y me he especializado en <strong>Data Science</strong> a través de un Bootcamp intensivo. Además, estoy certificada en <strong>Gestión de Proyectos (PMI)</strong>, lo que me permite abordar proyectos desde una perspectiva integral, optimizando procesos, recursos y tiempos.</p>
+                <p><strong>Mi visión</strong> es transformar datos en insights valiosos que puedan influir directamente en la toma de decisiones empresariales, mejorar la eficiencia operativa y contribuir al desarrollo de soluciones innovadoras. Me apasiona utilizar herramientas como <strong>Python</strong>, <strong>SQL</strong>, <strong>Tableau</strong> y <strong>R</strong> para crear modelos predictivos, análisis de datos y dashboards que puedan impactar positivamente en el negocio.</p>
+            </section>
 
-                <h3>Objetivos Profesionales</h3>
+            <section>
+                <h2>Objetivos</h2>
                 <ul>
-                    <li>Aplicar mis habilidades de análisis de datos para la toma de decisiones empresariales más informadas.</li>
-                    <li>Desarrollar soluciones basadas en datos que optimicen los procesos y mejoren el rendimiento de las organizaciones.</li>
-                    <li>Continuar mi crecimiento profesional mediante la actualización constante de mis habilidades y conocimientos en ciencia de datos y administración de proyectos.</li>
+                    <li>Aplicar mis habilidades en análisis de datos para identificar patrones y tendencias que ayuden a las empresas a tomar decisiones más informadas.</li>
+                    <li>Desarrollar soluciones basadas en datos que faciliten la visualización de resultados, predicción de comportamientos y optimización de procesos empresariales.</li>
+                    <li>Contribuir a la innovación tecnológica en el área de electrónica de potencia y análisis de datos mediante el uso de tecnologías emergentes.</li>
+                    <li>Gestionar proyectos complejos como líder de equipos, asegurando el cumplimiento de los objetivos a través de metodologías ágiles y un enfoque centrado en resultados.</li>
                 </ul>
-            </div>
+            </section>
+
+            <section>
+                <h2>Mis Proyectos</h2>
+
+                <div class="projects">
+                    <div class="project">
+                        <h3>1. Análisis del Mercado de Videojuegos</h3>
+                        <p><strong>Descripción:</strong> Este proyecto consistió en el análisis de datos de ventas globales de videojuegos, para entender qué factores influyen en el éxito de un juego a nivel mundial. A través de un análisis profundo de las preferencias de los usuarios, las clasificaciones y las ventas por plataformas, identifiqué qué aspectos son clave para el éxito en diversas regiones.</p>
+                        <p><strong>Metodología:</strong> Análisis de grandes volúmenes de datos sobre ventas, calificaciones y características de los juegos. Creación de modelos estadísticos para determinar patrones de éxito en distintas plataformas.</p>
+                    </div>
+
+                    <div class="project">
+                        <h3>2. Visualización de Datos de Vehículos Usados</h3>
+                        <p><strong>Descripción:</strong> Desarrollé una web app en Streamlit para visualizar datos de vehículos usados. La aplicación permite explorar la distribución de precios y kilometraje de vehículos, así como analizar las relaciones entre diferentes variables como marca, año y precio.</p>
+                        <p><strong>Metodología:</strong> Creación de gráficos interactivos con Streamlit. Análisis de datos mediante histogramas y gráficos de dispersión para identificar patrones en el mercado de vehículos.</p>
+                    </div>
+
+                    <div class="project">
+                        <h3>3. Dashboard de Tendencias Salariales Globales</h3>
+                        <p><strong>Descripción:</strong> Este proyecto consiste en la creación de un dashboard interactivo en Tableau para visualizar las tendencias salariales a nivel mundial, analizando datos de diferentes industrias y regiones. El dashboard permite explorar la variación salarial según diferentes factores, como la experiencia, la región y el sector.</p>
+                        <p><strong>Metodología:</strong> Integración de datos de múltiples fuentes sobre salarios globales. Creación de visualizaciones dinámicas y filtrables en Tableau.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>¿Cómo Contactarme?</h2>
+                <ul class="links">
+                    <li><strong>Email:</strong> <a href="mailto:ingenierovalenciabrito@gmail.com">ingenierovalenciabrito@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mayra-rocio-valencia-brito-86746b1ba/">Mi perfil en LinkedIn</a></li>
+                    <li><strong>Facebook:</strong> <a href="https://www.facebook.com/MAYRAROCIOVABRI">Mi página de Facebook</a></li>
+                </ul>
+            </section>
         </div>
-    </section>
+    </div>
 
-    <section class="projects">
-        <h2>Mis Proyectos</h2>
-        <div>
-            <h3>Análisis del Mercado de Videojuegos</h3>
-            <p><strong>Descripción del Proyecto:</strong> Este proyecto se enfocó en el análisis del mercado de videojuegos con el objetivo de identificar patrones que determinan el éxito de los juegos en diferentes regiones y plataformas. A través del estudio de las preferencias de los usuarios, las ventas por región y el impacto de las clasificaciones ESRB, busqué proporcionar insights valiosos para desarrolladores y editores en la industria.</p>
-            <ul>
-                <li><strong>Objetivos:</strong>
-                    <ul>
-                        <li>Identificar las plataformas y géneros más populares en Norteamérica, Europa y Japón.</li>
-                        <li>Evaluar el impacto de las calificaciones de usuarios y críticos en el éxito comercial de los juegos.</li>
-                        <li>Analizar la influencia de las clasificaciones ESRB en las ventas de juegos en distintas regiones.</li>
-                    </ul>
-                </li>
-                <li><strong>Metodología:</strong> Utilicé un extenso conjunto de datos sobre videojuegos, empleando técnicas estadísticas para evaluar los patrones y tendencias en las preferencias de los usuarios y el impacto en las ventas.</li>
-                <li><strong>Conclusiones:</strong>
-                    <ul>
-                        <li>Identifiqué diferencias significativas en las preferencias de juegos entre regiones, lo que sugiere que los desarrolladores deben adaptar sus productos a mercados específicos.</li>
-                        <li>Observé que la plataforma de juego influye en la calificación promedio de los juegos.</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h3>Construcción de Web App para Visualización de Datos</h3>
-            <p><strong>Descripción del Proyecto:</strong> Desarrollé una aplicación web con Streamlit para facilitar la visualización interactiva de datos de vehículos usados. Los usuarios pueden explorar la distribución de valores de las diferentes variables del conjunto de datos.</p>
-            <ul>
-                <li><strong>Funcionalidades:</strong>
-                    <ul>
-                        <li>Visualización de histogramas para analizar la distribución de variables como el precio y kilometraje.</li>
-                        <li>Gráficos de dispersión para explorar las relaciones entre variables, como el precio y el kilometraje.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="contact-info">
-        <h2>Contacto</h2>
-        <p>Para contactarme, puedes enviarme un correo a: <a href="mailto:ingenierovalenciabrito@gmail.com">ingenierovalenciabrito@gmail.com</a></p>
-        <p>También me puedes encontrar en las siguientes redes sociales:</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/mayra-rocio-valencia-brito-86746b1ba/">LinkedIn</a></li>
-            <li><a href="https://www.facebook.com/MAYRAROCIOVABRI">Facebook</a></li>
-        </ul>
-    </section>
-
+    <footer>
+        <p>© 2024 Mayra Rocio Valencia Brito. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
