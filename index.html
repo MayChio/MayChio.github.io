@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <style>
-        /* Estilos para centrar el título */
-        h1 {
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
-        
-        /* Estilo para el contenedor de la foto y la información */
+
+        /* Estilos para el contenedor de la foto y la información */
         .about-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 20px;
         }
 
         /* Estilo para la foto */
@@ -22,26 +32,51 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
+            object-fit: cover;
         }
 
-        /* Estilo para la información a la derecha */
+        /* Estilo para la información */
         .info {
             max-width: 60%;
         }
 
-        /* Para los enlaces de contacto */
+        /* Sección de contacto */
         .contact-info a {
             display: block;
             margin-top: 10px;
             color: #1a73e8;
             text-decoration: none;
         }
+
+        /* Estilo para los proyectos */
+        .projects {
+            padding: 20px;
+            background-color: white;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .projects h3 {
+            color: #1a73e8;
+        }
+
+        /* Enlaces de contacto */
+        .contact-info ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .contact-info ul li {
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Bienvenidos a mi Portafolio</h1>
     </header>
+
     <section>
         <div class="about-container">
             <!-- Foto de perfil -->
@@ -49,17 +84,54 @@
 
             <!-- Información sobre ti -->
             <div class="info">
-                <h2>Sobre mí</h2>
+                <h2>Acerca de mí</h2>
                 <p>
-                    Soy Mayra Rocio Valencia Brito, Científica de Datos, Ingeniera Industrial, con Maestría en Electrónica de Potencia y un Diplomado en Administración de Proyectos. Me apasiona transformar datos en información valiosa y tomar decisiones basadas en datos. Especializada en Python, SQL, Tableau y la gestión de proyectos.
+                    Soy Mayra Rocio Valencia Brito, Científica de Datos, Ingeniera Industrial, con Maestría en Electrónica de Potencia y un Diplomado en Administración de Proyectos. Me apasiona transformar datos en información valiosa y tomar decisiones basadas en datos. Especializada en Python, SQL, Tableau y la gestión de proyectos, busco constantemente mejorar la eficiencia operativa y los resultados empresariales a través del análisis de datos.
                 </p>
+
+                <h3>Objetivos Profesionales</h3>
+                <ul>
+                    <li>Aplicar mis habilidades de análisis de datos para la toma de decisiones empresariales más informadas.</li>
+                    <li>Desarrollar soluciones basadas en datos que optimicen los procesos y mejoren el rendimiento de las organizaciones.</li>
+                    <li>Continuar mi crecimiento profesional mediante la actualización constante de mis habilidades y conocimientos en ciencia de datos y administración de proyectos.</li>
+                </ul>
             </div>
         </div>
     </section>
-    <section>
+
+    <section class="projects">
         <h2>Mis Proyectos</h2>
-        <p>En este espacio puedes listar algunos proyectos en los que has trabajado.</p>
-        <!-- Aquí puedes agregar más detalles de los proyectos que quieras mostrar -->
+        <div>
+            <h3>Análisis del Mercado de Videojuegos</h3>
+            <p><strong>Descripción del Proyecto:</strong> Este proyecto se enfocó en el análisis del mercado de videojuegos con el objetivo de identificar patrones que determinan el éxito de los juegos en diferentes regiones y plataformas. A través del estudio de las preferencias de los usuarios, las ventas por región y el impacto de las clasificaciones ESRB, busqué proporcionar insights valiosos para desarrolladores y editores en la industria.</p>
+            <ul>
+                <li><strong>Objetivos:</strong>
+                    <ul>
+                        <li>Identificar las plataformas y géneros más populares en Norteamérica, Europa y Japón.</li>
+                        <li>Evaluar el impacto de las calificaciones de usuarios y críticos en el éxito comercial de los juegos.</li>
+                        <li>Analizar la influencia de las clasificaciones ESRB en las ventas de juegos en distintas regiones.</li>
+                    </ul>
+                </li>
+                <li><strong>Metodología:</strong> Utilicé un extenso conjunto de datos sobre videojuegos, empleando técnicas estadísticas para evaluar los patrones y tendencias en las preferencias de los usuarios y el impacto en las ventas.</li>
+                <li><strong>Conclusiones:</strong>
+                    <ul>
+                        <li>Identifiqué diferencias significativas en las preferencias de juegos entre regiones, lo que sugiere que los desarrolladores deben adaptar sus productos a mercados específicos.</li>
+                        <li>Observé que la plataforma de juego influye en la calificación promedio de los juegos.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Construcción de Web App para Visualización de Datos</h3>
+            <p><strong>Descripción del Proyecto:</strong> Desarrollé una aplicación web con Streamlit para facilitar la visualización interactiva de datos de vehículos usados. Los usuarios pueden explorar la distribución de valores de las diferentes variables del conjunto de datos.</p>
+            <ul>
+                <li><strong>Funcionalidades:</strong>
+                    <ul>
+                        <li>Visualización de histogramas para analizar la distribución de variables como el precio y kilometraje.</li>
+                        <li>Gráficos de dispersión para explorar las relaciones entre variables, como el precio y el kilometraje.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="contact-info">
@@ -71,5 +143,6 @@
             <li><a href="https://www.facebook.com/MAYRAROCIOVABRI">Facebook</a></li>
         </ul>
     </section>
+
 </body>
 </html>
